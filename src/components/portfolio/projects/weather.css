@@ -1,0 +1,32 @@
+
+/* h1{
+    padding-left: 35%;
+padding-right: 45%;
+}  */
+      image{
+    visibility: visible;
+   
+} 
+#weatherAPI{
+    text-align: center;
+}
+#weatherBox{
+    display:flex;
+    color:black;
+    margin: 5%;
+    padding: 10px;
+    margin-top: 5vh;
+}
+.wthrbtn{
+    margin-top: 7PX;
+    background-color: rgb(65, 31, 212);
+padding:3px;
+border-radius: 5px;
+}
+.wthrbtn:hover{
+    background-color: rgb(219, 216, 231);
+
+}
+#weatherLocation{
+background-color: aqua;
+}

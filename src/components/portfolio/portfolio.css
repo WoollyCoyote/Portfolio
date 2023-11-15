@@ -1,0 +1,19 @@
+.grid-layout{
+  display:flex;
+  flex-wrap: wrap;
+  background-color: #040607;
+  padding: 10px;
+}
+.grid{
+  flex:1;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  font-size: 30px;
+  text-align: center;
+}
+
+@media (max-width:768px) {
+.grid{
+  flex-direction: column;
+}
+}

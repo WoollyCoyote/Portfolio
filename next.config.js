@@ -6,8 +6,6 @@ const nextConfig = {
             {
               protocol: 'https',
               hostname: 'cdn.weatherapi.com',
-              port: '',
-              pathname: '',
             },
           ],
         },

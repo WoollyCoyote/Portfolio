@@ -1,13 +1,12 @@
 const Landing = () => {
     return ( 
-        <div className="landing center">
-          <div className="light-rays"></div>
-          <div className="card">
+        <div className="landing">
+          <div className="">
           <h1 className="name title">Cody O'Kelly </h1>
-          <h2 className="title">I love to build things with software. <br></br>
-          Aspiring to be a Frond end Web Dev
+          <h2 className="title">
+            FrontEnd Developer
           </h2>
-          
+          <h3 className="scroll-title title">scroll down to see my projects</h3>
           </div>
         </div>
      );

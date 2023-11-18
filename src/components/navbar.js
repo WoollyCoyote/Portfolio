@@ -2,16 +2,16 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <div className="navbarDiv">
-      <div className="card">
+      <div className="">
         
               <Link className="link" href="#landing">
                 Home{" "}
               </Link>
               <Link className="link" href="#portfolio">
-                Portfolio{" "}
+                Projects{" "}
               </Link>
               <Link className="link" href="#contact">
-                Contact{" "}
+                Contact Me{" "}
               </Link>
         
       </div>

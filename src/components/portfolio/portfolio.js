@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import "./portfolio.css";
+import { BsCaretUpFill } from "react-icons/bs"
 import PortfolioEle from "./portfolioEle";
 import Weather from "./projects/weather";
 
@@ -28,8 +29,7 @@ const Portfolio = () => {
 
   return (
     <div>
-      <div className="grid-layout">
-        <div className={"input-container project"}>
+        <div className="card">
           {pageDetails.getWeather && (
             <Weather
               weatherLocation={pageDetails.weatherLocation.toUpperCase()}
@@ -57,11 +57,21 @@ const Portfolio = () => {
           >
             {pageDetails.btn}
           </button>
+          {!pageDetails.getWeather && (
+            <div>
+
+            <BsCaretUpFill />
+            <p className="fw-normal">
+  enter your town or city to get the weather
+</p>
+
+            </div>
+)}
         </div>
+
         <div className={"project"}>
           <PortfolioEle />
         </div>
-      </div>
     </div>
   );
 };

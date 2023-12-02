@@ -1,9 +1,13 @@
 @tailwind base;
 
 :root{
-  --theme-one-clr: #d14d21;
+  --theme-one-clr: #c5451a;
+  --theme-two-clr: aliceblue;
 }
-
+html, body {
+  margin: 0;
+  padding: 0;
+}
 .center {
   display: flex;
   justify-content: center;
@@ -12,7 +16,7 @@
 
 .parallax {
   
-  background-image: url(../pics/image-1.png);
+  background-image: url(../pics/plad.jpg);
   min-height: 100vh;
   min-height: 100svh;
   background-attachment: fixed;
@@ -27,11 +31,11 @@
   margin: auto;
   padding: 10px;
   z-index: 1;
-  color: aliceblue;
-
+  color:var(--theme-two-clr);
+  
 }
 .landing {
-  transform: translateZ(0);
+  background-image: url(../pics/denim.jpg);
   min-height: 100vh;
   min-height: 100svh;
 }
@@ -43,21 +47,26 @@
 .scroll-title{
   font-size:large;
   font-weight: 600;
+  text-shadow:10px 10px 10px var(--theme-one-clr);
 padding-top: 15px;
 }
-.title{
-  margin-top: 5px;
+.title {
   display: flex;
   justify-content: center;
-  color:var(--theme-one-clr);
-  font-size:xx-large;
+  color: var(--theme-two-clr);
+  font-size: xx-large;
 }
+
 .portfolio {
+  background-image: url(../pics/denim.jpg);
+
   min-height: 100vh;
   min-height: 100svh;
 }
 
 .contact {
+  background-image: url(../pics/denim.jpg);
+
   min-height: 100vh;
   min-height: 100svh;
   font-weight: 400;
@@ -79,29 +88,17 @@ padding-top: 15px;
 
 @media (min-width: 480px) {
   .grid-layout {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 10px;
   }
+
+
+.title-box{
+  padding-top: 30%; 
+}
 }
 
-.input-container {
-  display: inline-block;
-  position: relative;
-}
-
-.input-container input {
-  padding: 5px;
-  width: auto;
-  border: 1px solid #ccc;
-  box-sizing: content-box;
-}
-
-.input-container input::placeholder {
-  color: #d9bebe;
-}
-
-/* .input-container input:focus {
-  border-color: #007bff;
-} */
 
 .link {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -110,7 +107,7 @@ padding-top: 15px;
   display: block;
   width: max-content;
   font-weight: 800;
-  color:var(--theme-one-clr);
+  color:var(--theme-two-clr);
 }
 
 .link:hover {
@@ -126,7 +123,7 @@ padding-top: 15px;
 }
 
 .contactDiv {
-  z-index: -1px;
+  z-index: -1;
 }
 
 .contact {

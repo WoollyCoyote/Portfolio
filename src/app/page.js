@@ -6,8 +6,9 @@ export default function Home() {
   return (
     <main>
       <div className="parallax">
-        
-        <Landing/>
+        <div className="landing center">
+        <Landing  />
+        </div>
         <div id="portfolio" className="portfolio center">
    <Portfolio/>
         </div>

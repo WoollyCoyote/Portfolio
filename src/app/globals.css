@@ -1,12 +1,14 @@
 @tailwind base;
 
 :root{
-  --theme-one-clr: #c5451a;
+  --theme-one-clr: #bc5e3e;
   --theme-two-clr: aliceblue;
+  --theme-three-clr:rgb(55, 91, 167);
 }
 html, body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 .center {
   display: flex;
@@ -15,8 +17,7 @@ html, body {
 }
 
 .parallax {
-  
-  background-image: url(../pics/plad.jpg);
+  background-image: url(../pics/denim.jpg);
   min-height: 100vh;
   min-height: 100svh;
   background-attachment: fixed;
@@ -27,15 +28,13 @@ html, body {
 
 .card{
   background-color:var(--theme-one-clr);
-  border-radius:5px;
-  margin: auto;
-  padding: 10px;
+  border-radius:10px;
   z-index: 1;
   color:var(--theme-two-clr);
   
 }
 .landing {
-  background-image: url(../pics/denim.jpg);
+  background-color: var( --theme-three-clr);
   min-height: 100vh;
   min-height: 100svh;
 }
@@ -46,57 +45,50 @@ html, body {
 }
 .scroll-title{
   font-size:large;
+  color:var(--theme-two-clr);
   font-weight: 600;
   text-shadow:10px 10px 10px var(--theme-one-clr);
 padding-top: 15px;
 }
-.title {
-  display: flex;
-  justify-content: center;
-  color: var(--theme-two-clr);
-  font-size: xx-large;
-}
 
+.title{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.subTitle{
+  text-align: center;
+  font-size: 1.0rem;
+  font-weight: 600;
+}
 .portfolio {
-  background-image: url(../pics/denim.jpg);
 
   min-height: 100vh;
   min-height: 100svh;
 }
 
 .contact {
-  background-image: url(../pics/denim.jpg);
-
+  background-color: var( --theme-three-clr);
   min-height: 100vh;
   min-height: 100svh;
   font-weight: 400;
 }
 
 .project {
-  margin: 15%;
-  padding: 10px;
   background-color:var(--theme-one-clr);
 }
 
-@media (min-width: 768px) {
-  .grid-layout {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-  }
+.navbarDiv {
+  position: fixed;
+  margin-top:2%;
+  margin-left:2%;
+  z-index: 1;
 }
 
-@media (min-width: 480px) {
-  .grid-layout {
-    display: grid;
-    grid-template-columns: repeat(1, 2fr);
-    gap: 10px;
+@media (max-width: 800px) {
+  .navbarDiv {
+    display: none;
   }
-
-
-.title-box{
-  padding-top: 30%; 
-}
 }
 
 
@@ -105,8 +97,7 @@ padding-top: 15px;
   margin: 5px;
   padding: 5px;
   display: block;
-  width: max-content;
-  font-weight: 800;
+  font-weight: 7700;
   color:var(--theme-two-clr);
 }
 
@@ -114,12 +105,6 @@ padding-top: 15px;
   background-color: white;
   color: black;
   border-radius: 10px;
-}
-.navbarDiv {
-  position: fixed;
-  margin-top:2%;
-  margin-left:2%;
-  z-index: 1;
 }
 
 .contactDiv {

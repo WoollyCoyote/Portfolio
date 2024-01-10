@@ -6,11 +6,21 @@
     margin: 5%;
     padding: 10px;
     margin-top: 5vh;
+    width:min-content;
 }
+.btninputlink{
+    padding-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    gap:2em;
 
+}
 .weatherInputBox {
     color:black;
     display: flex;
+    gap:1em;
     justify-content: center;
     align-items: center;
 }
@@ -32,9 +42,7 @@ border-radius: 5px;
     margin-top: 5vh;
 gap: 5%;
 }
-#weatherLocation{
-background-color: aqua;
-}
+
 .oilAppBox {
     display: flex;
     justify-content: center;
@@ -42,6 +50,13 @@ background-color: aqua;
     flex-direction: column;
     margin: 3%;
     padding: 10px;
+    width: fit-content;
+}
+
+@media (min-width: 800px){
+    .oilAppBox{
+        width:550px;
+    }
 }
 
 .oilImgandDis {
@@ -49,33 +64,24 @@ background-color: aqua;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
 }
 
 .oilAppImg {
-    flex: 1;
-    width: 100%;
     height: auto;
 }
 
 .oilAppDiscription {
     flex: 1;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.oilAppDiscription p {
-    width: 100%;
-    text-align: center;
-}
 .Oillinks{
     margin: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction:row;
-    width: 100%;
     gap:2em;
 }

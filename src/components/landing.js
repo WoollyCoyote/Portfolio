@@ -10,7 +10,7 @@ const Landing = () => {
           </h2>
           </div>
           </div>
-          <h3 className="scroll-title title">scroll down to see my projects</h3>
+          <h3 className="scroll-title">scroll down to see my projects</h3>
         </div>
      );
 }

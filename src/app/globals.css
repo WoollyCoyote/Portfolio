@@ -1,15 +1,18 @@
 @tailwind base;
 
-:root{
+:root {
   --theme-one-clr: #bc5e3e;
   --theme-two-clr: aliceblue;
-  --theme-three-clr:rgb(55, 91, 167);
+  --theme-three-clr: rgb(55, 91, 167);
 }
-html, body {
+
+html,
+body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
+
 .center {
   display: flex;
   justify-content: center;
@@ -17,7 +20,7 @@ html, body {
 }
 
 .parallax {
-  background-image: url(../pics/denim.jpg);
+  background-image: url(../pics/mountain.jpg);
   min-height: 100vh;
   min-height: 100svh;
   background-attachment: fixed;
@@ -25,42 +28,52 @@ html, body {
   background-size: cover;
 }
 
-
-.card{
-  background-color:var(--theme-one-clr);
-  border-radius:10px;
+.card {
+  background-color: var(--theme-one-clr);
+  border-radius: 10px;
   z-index: 1;
-  color:var(--theme-two-clr);
-  
+  color: var(--theme-two-clr);
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap:1em;
+  align-items: center;
+  flex-direction: column;
+}
+
 .landing {
-  background-color: var( --theme-three-clr);
+  background-color: var(--theme-three-clr);
   min-height: 100vh;
   min-height: 100svh;
 }
 
-.name{
-  font-size:xx-large;
+.name {
+  font-size: xx-large;
   font-weight: 600;
-}
-.scroll-title{
-  font-size:large;
-  color:var(--theme-two-clr);
-  font-weight: 600;
-  text-shadow:10px 10px 10px var(--theme-one-clr);
-padding-top: 15px;
 }
 
-.title{
+.scroll-title {
+  font-size: 1em;
+  color: var(--theme-two-clr);
+  font-weight: 700;
+  text-shadow: 10px 10px 10px var(--theme-one-clr);
+  padding-top: 15px;
+}
+
+.title {
   text-align: center;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 600;
 }
-.subTitle{
+
+.subTitle {
   text-align: center;
   font-size: 1.0rem;
   font-weight: 600;
 }
+
 .portfolio {
 
   min-height: 100vh;
@@ -68,20 +81,20 @@ padding-top: 15px;
 }
 
 .contact {
-  background-color: var( --theme-three-clr);
+  background-color: var(--theme-three-clr);
   min-height: 100vh;
   min-height: 100svh;
   font-weight: 400;
 }
 
 .project {
-  background-color:var(--theme-one-clr);
+  background-color: var(--theme-one-clr);
 }
 
 .navbarDiv {
   position: fixed;
-  margin-top:2%;
-  margin-left:2%;
+  margin-top: 2%;
+  margin-left: 2%;
   z-index: 1;
 }
 
@@ -89,6 +102,7 @@ padding-top: 15px;
   .navbarDiv {
     display: none;
   }
+
 }
 
 
@@ -98,7 +112,7 @@ padding-top: 15px;
   padding: 5px;
   display: block;
   font-weight: 7700;
-  color:var(--theme-two-clr);
+  color: var(--theme-two-clr);
 }
 
 .link:hover {
@@ -113,6 +127,5 @@ padding-top: 15px;
 
 .contact {
   transform: translateZ(0);
-  color:#ccc;
+  color: #ccc;
 }
-

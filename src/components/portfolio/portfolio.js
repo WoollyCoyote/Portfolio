@@ -4,7 +4,7 @@ import { FaGithubAlt } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 import "./portfolio.css";
-import Weather from "./projects/weather";
+import Weather from "./weather";
 
 const Portfolio = () => {
   let [pageDetails, setPageDetails] = useState({
@@ -29,7 +29,7 @@ const Portfolio = () => {
   }, [pageDetails.location]);
 
   return (
-    <div>
+    <div className="container">
 
       <div className="card oilAppBox">
         <h2 className="title">Oil Life</h2>
@@ -82,7 +82,7 @@ const Portfolio = () => {
             weatherLocation={pageDetails.weatherLocation.toUpperCase()}
           />
         )}
-
+<div className="btninputlink">
        <div className="weatherInputBox">
         <input
           id="textInput"
@@ -96,7 +96,7 @@ const Portfolio = () => {
               weatherLocation: event.target.value,
             });
           }}
-        />
+          />
         <button
           onClick={() => {
             handleBtnClick();
@@ -111,6 +111,13 @@ const Portfolio = () => {
           <div>
           </div>
         )}
+           <div id="githubLink" className="oilLinkGit">
+            <FaGithubAlt />
+            <Link href="https://github.com/WoollyCoyote/nextcrud.git">
+              Github
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   );

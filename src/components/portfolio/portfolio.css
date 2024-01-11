@@ -6,7 +6,7 @@
     margin: 5%;
     padding: 10px;
     margin-top: 5vh;
-    width:min-content;
+    width:fit-content;
 }
 .btninputlink{
     padding-top: 1em;
@@ -55,6 +55,9 @@ gap: 5%;
 
 @media (min-width: 800px){
     .oilAppBox{
+        width:550px;
+    }
+    .weatherBox{
         width:550px;
     }
 }

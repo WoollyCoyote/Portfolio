@@ -3,7 +3,7 @@ const contact = () => {
         <div className="contactDiv center card">
             <h2 className="title">Contact Me</h2>
             <p>CellPhone 1(810)-965-8916</p>
-            <p>Email me @ PFCOKelly@gmail.com</p>
+            <p>Email@ PFCOKelly@gmail.com</p>
             <form className="contactForm center">
                 <label className="contactInput">
                     Name:

@@ -12,7 +12,25 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+input{
+  background-color: var(--theme-two-clr); 
+  color: black;
+  border-radius: 8px;
+  border: 1px solid var(--theme-one-clr);
+  font-size: 1.2rem;
+  font-weight: 600;
 
+}
+button{
+  margin-top: 7PX;
+  background-color: var(--theme-three-clr);
+padding:3px;
+border-radius: 5px;
+}
+button:hover{
+  background-color: rgb(219, 216, 231);
+
+}
 .center {
   display: flex;
   justify-content: center;
@@ -30,16 +48,13 @@ body {
 
 .card {
   background-color: var(--theme-one-clr);
-  border-radius: 10px;
+  border-radius: 8px;
   z-index: 1;
   color: var(--theme-two-clr);
 }
 
 .container {
-  display: flex;
-  justify-content: center;
   gap:1em;
-  align-items: center;
   flex-direction: column;
 }
 
@@ -65,7 +80,7 @@ body {
 .title {
   text-align: center;
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .subTitle {
@@ -82,9 +97,26 @@ body {
 
 .contact {
   background-color: var(--theme-three-clr);
+  transform: translateZ(0);
   min-height: 100vh;
   min-height: 100svh;
   font-weight: 400;
+}
+
+.contactDiv {
+  padding:1em;
+  flex-direction: column;
+  z-index: -1;
+}
+
+.contactForm{
+  flex-direction: column;
+  z-index: -1;
+gap:1em;
+}
+
+.contactInput{
+width:min-content
 }
 
 .project {
@@ -119,13 +151,4 @@ body {
   background-color: white;
   color: black;
   border-radius: 10px;
-}
-
-.contactDiv {
-  z-index: -1;
-}
-
-.contact {
-  transform: translateZ(0);
-  color: #ccc;
 }

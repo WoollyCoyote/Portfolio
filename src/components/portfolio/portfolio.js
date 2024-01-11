@@ -29,14 +29,14 @@ const Portfolio = () => {
   }, [pageDetails.location]);
 
   return (
-    <div className="container">
+    <div className="center container">
 
       <div className="card oilAppBox">
         <h2 className="title">Oil Life</h2>
         <h4 className="subTitle">
-          NEXT CRUD APP with a seperate JSON server for backend Data
+          NEXT.JS CRUD APP with a seperate JSON server for backend Data
         </h4>
-        <div className="oilImgandDis">
+        <div className="oilImgandDis center">
 
         <Image
         className="oilAppImg"
@@ -49,7 +49,7 @@ const Portfolio = () => {
           a oil tracking app for keeping a log of each of youre vehicles current oil use and when to change oil. The Data is
           stored with a Json server running on *Render.com* and the front end is deployed on vercel
         </p>
-        <div className="Oillinks">
+        <div className="Oillinks center">
           <div className="oilLinkLive">
             <Link href="https://nextcrud-sage.vercel.app">Deployed on</Link>
             <svg
@@ -76,14 +76,14 @@ const Portfolio = () => {
 
       <div className="card weatherBox">
       <h2 className="title">Weather app</h2>
-        <h3 className="subTitle">API app rebuilt as a React Component that changes the parallax wallpaper dpending on youre weather condition</h3>
+        <h3 className="subTitle">API app rebuilt as a React Component</h3>
         {pageDetails.getWeather && (
           <Weather
             weatherLocation={pageDetails.weatherLocation.toUpperCase()}
           />
         )}
-<div className="btninputlink">
-       <div className="weatherInputBox">
+<div className="btninputlink center">
+       <div className="weatherInputBox center">
         <input
           id="textInput"
           hidden={pageDetails.inputVis}

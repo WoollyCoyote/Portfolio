@@ -27,8 +27,6 @@ const Weather = (props) => {
       const results = await response.text();
       setWeatherapi(JSON.parse(results));
       setLoaded(!loaded);
-      // console.log(results, locationToUpperCase);
-      console.log(weatherapi.current.condition.icon)
     } catch (error) {
       console.error(error);
     }
@@ -44,7 +42,7 @@ const Weather = (props) => {
     <div>
       <div id="weatherAPI">
         {loaded && (
-          <div className="weatherData">
+          <div className="weatherData center">
             <h1 className="weatherLocation">{props.weatherLocation}</h1>
             <p>{weatherapi.current.temp_f}</p>
             <p>{weatherapi.current.condition.text}</p>

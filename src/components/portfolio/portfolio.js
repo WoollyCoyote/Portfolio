@@ -46,7 +46,7 @@ const Portfolio = () => {
         alt="Project screen shot"
         />
         <p className="oilAppDiscription">
-          a oil tracking app for keeping a log of each of youre vehicles current oil use and when to change oil. The Data is
+          Oil tracking app is for keeping a log of each of you're vehicles current oil use and when to change oil. The Data is
           stored with a Json server running on *Render.com* and the front end is deployed on vercel
         </p>
         <div className="Oillinks center">

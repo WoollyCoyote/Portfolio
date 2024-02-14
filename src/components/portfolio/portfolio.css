@@ -37,7 +37,7 @@ gap: 5%;
 }
 
 .oilAppImg {
-    height: auto;
+    border-radius: 8px;
 }
 
 .oilAppDiscription {

@@ -1,8 +1,19 @@
+import Image from "next/image";
+
 const Landing = () => {
     return ( 
         <div>
-          <div className="card">
+          <div className="center">
 
+          <Image
+        className="oilAppImg"
+        src="/beard.png"
+        width={115}
+        height={115}
+        alt="Project screen shot"
+        />
+        </div>
+          <div className="card">
           <div className="title-box">
           <h1 className="name title">Cody O'Kelly </h1>
           <h2 className="title">

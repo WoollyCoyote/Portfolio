@@ -73,6 +73,29 @@ const Portfolio = () => {
         </div>
       </div>
 
+<div className="card oilAppBox">
+  <h2 className="title">Codys Blog site</h2>
+        <h4 className="subTitle">
+         React TypeScript NEXT.JS CRUD APP with a seperate JSON server for backend Data
+        </h4>
+        <div className="oilImgandDis center">
+        <Image
+        className="oilAppImg"
+        src="/blog.png"
+        width={500}
+        height={500}
+        alt="blog screen shot"
+        />
+
+        {/* oillife links */}
+          <div id="githubLink" className="oilLinkGit">
+            <FaGithubAlt />
+            <Link href="https://github.com/WoollyCoyote/nextcrud.git">
+              Github
+            </Link>
+          </div>
+        </div>
+</div>
 
       <div className="card weatherBox">
       <h2 className="title">Weather app</h2>

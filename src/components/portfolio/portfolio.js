@@ -152,7 +152,7 @@ const Portfolio = () => {
         )}
            <div id="githubLink" className="oilLinkGit">
             <FaGithubAlt />
-            <Link href="https://github.com/WoollyCoyote/nextcrud.git">
+            <Link href="https://github.com/WoollyCoyote/Portfolio/blob/192fcd8c60bcd7c5c421ae4e9c8bd18fdf118a4f/src/components/portfolio/weather.js">
               Github
             </Link>
           </div>

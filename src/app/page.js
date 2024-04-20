@@ -1,6 +1,6 @@
-import Contact from "@/components/contact";
+import Contact from "../components/contact";
 import Portfolio from "../components/portfolio/portfolio";
-import Landing from "@/components/landing";
+import Landing from "../components/landing";
 
 export default function Home() {
 

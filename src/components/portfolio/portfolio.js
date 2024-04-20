@@ -5,8 +5,14 @@ import Image from "next/image";
 import Link from "next/link";
 import "./portfolio.css";
 import Weather from "./weather";
+import Chat from "../chat"
 
-const Portfolio = () => {
+export const runtime = 'edge';
+
+
+
+export default function Portfolio () {
+
   let [pageDetails, setPageDetails] = useState({
     btn: "Enter",
     inputVis: false,
@@ -112,7 +118,10 @@ const Portfolio = () => {
           </div>
         </div>
 </div>
-
+<div className="card oilAppBox">
+  
+<Chat/>
+</div>
       <div className="card weatherBox">
       <h2 className="title">Weather app</h2>
         <h3 className="subTitle">API app rebuilt as a React Component</h3>
@@ -160,6 +169,4 @@ const Portfolio = () => {
       </div>
     </div>
   );
-};
-
-export default Portfolio;
+}

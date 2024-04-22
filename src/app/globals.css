@@ -3,7 +3,7 @@
 :root {
   --theme-one-clr: #bc5e3e;
   --theme-two-clr: aliceblue;
-  --theme-three-clr: rgb(55, 91, 167);
+  --theme-three-clr: rgb(27, 128, 128);
 }
 
 html,
@@ -49,6 +49,7 @@ button:hover{
 .card {
   background-color: var(--theme-one-clr);
   border-radius: 8px;
+  padding: 5px;
   z-index: 1;
   color: var(--theme-two-clr);
 }

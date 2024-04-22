@@ -6,12 +6,20 @@ import Link from "next/link";
 import "./portfolio.css";
 import Weather from "./weather";
 import Chat from "../chat"
+import hljs from 'highlight.js';
+import "highlight.js/styles/github.css";
+
 
 export const runtime = 'edge';
 
 
 
 export default function Portfolio () {
+
+  const highlightedCode = hljs.highlight(
+  '<span>Hello World!</span>',
+  { language: 'xml' }
+).value
 
   let [pageDetails, setPageDetails] = useState({
     btn: "Enter",
@@ -43,7 +51,7 @@ export default function Portfolio () {
           NEXT.JS CRUD APP with a seperate JSON server for backend Data
         </h4>
         <div className="oilImgandDis center">
-
+<span >{highlightedCode}</span>
         <Image
         className="oilAppImg"
         src="/oillifescreenshotv1.png"

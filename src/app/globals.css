@@ -31,6 +31,7 @@ button:hover{
   background-color: rgb(219, 216, 231);
 
 }
+
 .center {
   display: flex;
   justify-content: center;
@@ -50,6 +51,9 @@ button:hover{
   background-color: var(--theme-one-clr);
   border-radius: 8px;
   padding: 5px;
+  min-width: 10rem;
+  max-width: 50rem;
+  margin: 3%;
   z-index: 1;
   color: var(--theme-two-clr);
 }
@@ -60,7 +64,6 @@ button:hover{
 }
 
 .landing {
-  background-color: var(--theme-three-clr);
   min-height: 100vh;
   min-height: 100svh;
 }

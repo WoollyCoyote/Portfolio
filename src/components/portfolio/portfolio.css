@@ -1,7 +1,3 @@
-
-/* #weatherAPI{
-    text-align: center;
-} */
 .weatherBox{
     margin: 5%;
     padding: 10px;
@@ -14,33 +10,18 @@
     gap:1em;
 
 }
-/* .weatherInputBox {
-    gap:.5em;
-} */
+
 
 .weatherData{
     flex-direction:row;
 gap: 5%;
 }
 
-/* .oilAppBox {
-    flex-direction: column;
-   
-    max-width:550px;
-} */
-
 
 .oilImgandDis {
     flex-direction: column;
 }
 
-/* .oilAppImg {
-    border-radius: 8px;
-} */
-
-/* .oilAppDiscription {
-    flex: 1;
-} */
 
 .Oillinks{
     margin: 1em;

@@ -67,7 +67,12 @@ button:hover{
   min-height: 100vh;
   min-height: 100svh;
 }
-
+.profilePic {
+  border-radius: 20%;
+  margin: 0 auto;
+  display: block;
+  border: 5px solid var(--theme-one-clr);
+}
 .name {
   font-size: xx-large;
   font-weight: 600;

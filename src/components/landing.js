@@ -6,10 +6,10 @@ const Landing = () => {
           <div className="center">
 
           <Image
-        className="oilAppImg"
-        src="/beard.png"
-        width={115}
-        height={115}
+        className="profilePic"
+        src="/meAtPark.jpg"
+        width={155}
+        height={155}
         alt="Project screen shot"
         />
         </div>
